@@ -1,0 +1,490 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* -----------------------------------html-----------------------------------*/
+@font-face{
+    font-family: Sofia Pro; 
+    src: url(sofiapro-light.otf)
+} 
+
+html {
+    align-content: center;
+}
+	
+/* gets rid of default margins etc set by browser*/
+*	{
+	margin: 0;
+	padding: 0;
+	}
+	
+/*remove default settings for all lists ordered & unordered*/
+ul {
+	list-style:none;
+	}
+	
+/*remove default settings for all lists & images - allowing them to sit side by side*/
+li, img {
+		margin: 0;
+		padding: 0;
+		}
+
+
+/*------------------------------------CONTAINER-----------------------------------*/
+body {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    height: auto;
+}
+
+                    @media (max-width: 600px) {body {width:85%;}}
+
+                    @media (min-width: 960px) {
+                        body{ width: 75%}
+                    }
+
+
+/*----------------------------------HEADER & NAV---------------------------------*/
+
+header{
+    position: relative;
+    height: 9.5em;
+}
+
+
+@media (max-width: 600px) {header {max-height: 9em;}}
+
+@media (min-width: 1200px) {header{height: 10em;}}
+
+
+
+
+
+h1 {
+    width: 80%;
+    position: absolute;
+    top: 1.6em;  
+    left:0;
+    font-family: Sofia Pro, sans-serif;
+    font-style: normal;
+    font-weight: 3;
+    font-size: 1.2em;
+    letter-spacing: .25px;
+    color: #f45a5a; 
+    opacity: 0.5;
+}
+
+h1 a{
+    text-decoration: none;
+    color: #f45a5a;
+}
+
+.navigation{
+    position: relative;
+    top: 1.6em;   
+    float:right;
+    transition: all 10s ease-in-out;
+}
+
+.navigation:hover {
+    transform: rotate(360deg);
+}
+
+.navigation img {
+    width:100%;
+    min-width: 85px;
+    max-width: 110px;
+}
+
+@media (max-width: 640px) {
+    .navigation {max-width: 85px; }
+}
+
+@media (min-width: 960px) {
+    h1 {font-size: calc(1.2em + 0.35vw);}
+}
+
+
+/*-------------------------------INTRO TEXT-----------------------------*/
+
+h2 {
+    width: 80%;
+    position: relative;
+    left:0;
+    font-family: Sofia Pro, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.15em;
+    font-size: 1.8em;
+    color: #f45a5a; 
+    margin-bottom: 0.4em;
+}
+
+@media (min-width: 960px) {
+    h2 {font-size: calc(2em + 0.5vw);
+    line-height: 45px;}
+}
+
+@media (max-width: 640px) {
+    h2 {width: 100%; font-size: calc(1.6em + 1vw);}
+}
+
+@media (min-width: 1200px) {
+    h2 {width: 100%; font-size: calc(1.6em + 1vw);margin-bottom: 0.7em;}
+}
+
+
+/*-------------------------------SECTION 1 THUMBNAILS-----------------------------*/
+#thumbnails {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    }
+
+#thumbnails img {
+    margin: auto;
+    width:100%;
+    float: left;
+    margin-bottom: 4%;
+}
+
+.one {
+    float:left;
+    width: 48.95%;
+    display: block;
+    height:auto;
+    position: relative;
+    }
+
+
+.two li {
+    float: right;
+    width: 48.95%;
+    margin: 0;
+    height: auto;
+    position: relative;
+    }
+
+
+
+/*-------------------------------SECTION 2 THUMBNAILS-----------------------------*/
+
+#thumbnails2 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+ #thumbnails2 img {
+    margin:auto;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-bottom: 4%;
+    }
+
+.three {
+    float: left;
+    width: 48.95%;
+    }
+
+.three li {
+    float: left;
+    width:100%;
+    height: auto;
+    position: relative;
+    }
+
+.four{
+    float:right;
+    width: 48.95%;
+    
+    }
+
+.four li {
+    float: left;
+    width:100%;
+    height: auto;
+    position: relative;
+    }
+
+
+
+#thumbnails3 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#thumbnails3 img {
+     margin:auto;
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-bottom: 4%;
+}
+
+.five{
+    float: left;
+    width: 48.95%;
+}
+.five li {
+    float: left;
+    width:100%;
+    height: auto;
+    position: relative;
+    }
+
+
+.six {
+    float: right;
+    width: 48.95%;
+}
+
+.six li {
+    float: left;
+    width:100%;
+    height: auto;
+    position: relative;
+    }
+
+
+
+
+
+.overlay {
+    opacity: 0;
+    width: 100%;
+    height: 95.15%;
+    background-color: #ff4545;
+    position: absolute;
+    left:0;
+    right:0;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+.one .overlay {
+    height: 97.6%;
+}
+
+.four .overlay{
+    height: 96.15%;
+}
+
+.five .overlay{
+    height: 96.25%
+}
+
+.six
+.overlay{
+    height: 96.25%
+}
+
+
+
+
+.overlay #name {
+    position: relative;
+    text-align: center; 
+    font-family: Sofia Pro, sans-serif;
+    font-weight: 400;
+    font-size: 1.75em;
+    color: #fff;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+div.overlay:hover {
+    opacity: .95;
+}
+
+.overlay-2 {
+    opacity: 0;
+    width: 100%;
+    height: 97%;
+    background-color: #ff4545;
+    position: absolute;
+    -webkit-transition: opacity 500ms;
+    -moz-transition: opacity 500ms;
+    -o-transition: opacity 500ms;
+    transition: opacity 500ms;
+}
+
+.overlay-2 #name {
+    position: relative;
+    text-align: center;  
+    font-family: Sofia Pro, sans-serif;
+    font-weight: 400;
+    font-size: 1.75em;
+    color: #fff;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#subname{
+    margin-top: .35em;
+    font-weight: 300;
+    font-size: .75em;
+}
+
+div.overlay-2:hover {
+    opacity: .95;
+}
+
+
+
+
+/*-------------------------------HOME PAGE MEDIA QUERIES-----------------------------*/
+@media (max-width: 640px) {
+    .one { width: 100%;}
+    .two li { width: 100%;}
+    .three { width: 100%;}
+    .four { width: 100%;}
+    .five { width: 100%;}
+    .six {width: 100%;}
+    #thumbnails img {padding-bottom: 4%; }
+    #thumbnails2 img {padding-bottom: 4%; }
+    
+    
+}
+
+@media (max-width: 960px) {
+    section img {margin: 0 0 0.75em 0; }
+}
+
+
+/*-------------------------------PROJECT PAGES-----------------------------*/
+
+
+h3 {
+    color: #ff4545;
+    width: 100%;
+    font-family: Sofia Pro;
+    font-size: calc(1.4em + 0.5vw);
+    font-weight: 500;
+    letter-spacing: .5px;
+    text-align: left;
+    margin-top: 0.4em;
+}
+
+#project-info p{
+    font-family: Sofia Pro;
+    font-size: calc(1em + 0.15vw);
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.35;
+    color:slategray;
+    margin-bottom: 2.2em;
+    width: 100%;
+}
+
+#project-info{
+    width: 100%;
+    overflow: hidden;
+}
+
+h4 {
+    color: #f45a5a; 
+    opacity: 0.5;
+    width: 100%;
+    font-family: Sofia Pro;
+    font-weight: 400;
+    letter-spacing: .25px;
+    font-size: calc(.8em + 0.15vw);
+    text-align: left;
+    margin-bottom: 1em;
+    margin-top: 0.45em;
+}
+
+
+@media (max-width: 640px) {
+    #project-info header {height:14em;}
+    #project-info h3 {width: 100%; font-size: calc(1.2em + 1vw);}
+}
+
+@media (min-width: 1200px) {
+    #project-info p {width:95%;}
+    #project-info h3 {width: 100%; font-size: calc(1.2em + 1vw);}
+}
+
+
+
+#images{
+    width: 100%;
+    width: 100%;
+    overflow: hidden;
+    }
+
+         #images img {
+             width:100%;
+             padding-bottom: 2.1%;
+            }
+
+#image-row {
+    float: left;
+}
+
+#image-row img{
+    width: 48.95%;
+    float: left;
+    padding-bottom: 2.1%;
+}
+
+#right img {
+    float: right;
+}
+
+@media (max-width: 640px) {
+    #image-row img {width:100%;}
+}
+
+/* ------------------------------FOOTER-----------------------------------*/
+footer {
+    width: 100%;
+    height: 10em;
+    display: inline-block;
+    font-size: .75em;
+    }
+
+.project-navigation a {
+    text-decoration: underline;
+    font-family: Sofia Pro;
+    font-size: 1.25em;
+    color: #ff4545;
+}
+
+.project-navigation {
+    width:80%;
+    height: auto;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+#button1 {
+    width:50%;
+    float:left;
+}
+
+
+.copyright {
+    padding-top: 2em;
+}
+
+.copyright p {
+    font-family: Sofia Pro, sans-serif;
+    font-weight:400;
+    line-height: 1.35em;
+    color: #f4545a;
+    text-align: center;
+}
+
+
+
+
