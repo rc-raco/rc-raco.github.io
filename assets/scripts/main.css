@@ -4,7 +4,7 @@
 /* -----------------------------------html-----------------------------------*/
 @font-face{
     font-family: Sofia Pro; 
-    src: url(sofiapro-light.otf)
+    src: url(/assets/fonts/sofiapro-light.otf)
 } 
 
 html {
@@ -47,7 +47,7 @@ body {
 
 header{
     position: relative;
-    height: 9.5em;
+    height: 9em;
 }
 
 
@@ -66,7 +66,7 @@ h1 {
     left:0;
     font-family: Sofia Pro, sans-serif;
     font-style: normal;
-    font-weight: 3;
+    font-weight: 500;
     font-size: 1.2em;
     letter-spacing: .25px;
     color: #f45a5a; 
@@ -92,7 +92,7 @@ h1 a{
 .navigation img {
     width:100%;
     min-width: 85px;
-    max-width: 110px;
+    max-width: 100px;
 }
 
 @media (max-width: 640px) {
@@ -255,7 +255,7 @@ h2 {
     opacity: 0;
     width: 100%;
     height: 95.15%;
-    background-color: #ff4545;
+    background-color: #f4f5f6;
     position: absolute;
     left:0;
     right:0;
@@ -270,16 +270,16 @@ h2 {
 }
 
 .four .overlay{
-    height: 96.15%;
+    height: 96.5%;
 }
 
 .five .overlay{
-    height: 96.25%
+    height: 95.9%
 }
 
 .six
 .overlay{
-    height: 96.25%
+    height: 95.9%
 }
 
 
@@ -289,9 +289,9 @@ h2 {
     position: relative;
     text-align: center; 
     font-family: Sofia Pro, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.75em;
-    color: #fff;
+    color: #47494d;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -306,7 +306,7 @@ div.overlay:hover {
     opacity: 0;
     width: 100%;
     height: 97%;
-    background-color: #ff4545;
+    background-color: #f4f5f6;
     position: absolute;
     -webkit-transition: opacity 500ms;
     -moz-transition: opacity 500ms;
@@ -318,9 +318,9 @@ div.overlay:hover {
     position: relative;
     text-align: center;  
     font-family: Sofia Pro, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1.75em;
-    color: #fff;
+    color: #47494d;
     top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -374,7 +374,7 @@ h3 {
 
 #project-info p{
     font-family: Sofia Pro;
-    font-size: calc(1em + 0.15vw);
+    font-size: calc(1em);
     text-align: left;
     font-weight: 400;
     line-height: 1.35;
@@ -388,14 +388,19 @@ h3 {
     overflow: hidden;
 }
 
+#project-info a {
+    text-decoration: none;
+    color: #f45a5a;
+}
+    
 h4 {
     color: #f45a5a; 
-    opacity: 0.5;
+    opacity: 0.75;
     width: 100%;
     font-family: Sofia Pro;
     font-weight: 400;
     letter-spacing: .25px;
-    font-size: calc(.8em + 0.15vw);
+    font-size: calc(.9em + 0.15vw);
     text-align: left;
     margin-bottom: 1em;
     margin-top: 0.45em;
@@ -405,6 +410,8 @@ h4 {
 @media (max-width: 640px) {
     #project-info header {height:14em;}
     #project-info h3 {width: 100%; font-size: calc(1.2em + 1vw);}
+    h4 {line-height: 1.25em;}
+    
 }
 
 @media (min-width: 1200px) {
@@ -416,7 +423,6 @@ h4 {
 
 #images{
     width: 100%;
-    width: 100%;
     overflow: hidden;
     }
 
@@ -426,7 +432,8 @@ h4 {
             }
 
 #image-row {
-    float: left;
+    overflow: hidden;
+    width:100%;
 }
 
 #image-row img{
@@ -443,48 +450,123 @@ h4 {
     #image-row img {width:100%;}
 }
 
-/* ------------------------------FOOTER-----------------------------------*/
+
+
+.project-navigation {
+    width:100%;
+    height: auto;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 6em;
+    font-family: Sofia Pro, sans-serif;
+    letter-spacing: .045em;
+}
+
+
+
+.project-navigation a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    color: #ff4545;
+     -moz-transition:color .2s ease-in; /*--- eases the colour change on the hover ---*/
+    -o-transition:color .2s ease-in;
+    -webkit-transition:color .2s ease-in;
+}
+
+.project-navigation a:hover{
+    color: #ff4545;
+    opacity: .75;
+}
+
+
+#button1 {
+    width:45%;
+    text-align: right;
+    float:left;
+}
+
+
+#button2 {
+    display: inline-block;
+    float: right;
+    width: 45%;
+}
+
+@media (max-width: 960px) {
+    .project-navigation {margin-bottom: 4em;}
+}
+
+/* ------------------------------FOOTER---------------------------*/
+
+
+
 footer {
     width: 100%;
     height: 10em;
     display: inline-block;
     font-size: .75em;
+    
     }
 
-.project-navigation a {
-    text-decoration: underline;
-    font-family: Sofia Pro;
-    font-size: 1.25em;
-    color: #ff4545;
-}
-
-.project-navigation {
-    width:80%;
-    height: auto;
-    margin: auto;
-    margin-top: 1em;
-    margin-bottom: .5em;
-    text-align: center;
-}
-
-#button1 {
-    width:50%;
-    float:left;
-}
-
-
 .copyright {
-    padding-top: 2em;
+    padding-top: 1em;
+    width: 69%;
+    display: inline-block;
+    float: left;
 }
 
 .copyright p {
     font-family: Sofia Pro, sans-serif;
+    font-size: 1.1em;
     font-weight:400;
-    line-height: 1.35em;
-    color: #f4545a;
-    text-align: center;
+    line-height: 1.8em;
+    color: #b7b7b7;
+    
+}
+
+.social {
+    padding-top: 1em;
+    width:25%;
+    float:right;
+    display: inline-block;
+    text-align: right;
+    opacity:.75%;
+}
+
+
+.social li {
+    margin: 0 0 0 .75em;
+    display: inline;
+}
+
+
+.social img{
+    max-height: 1.9em;
+    max-width: 1.9em;
+}
+
+
+.social a {
+    text-decoration: none;
+    opacity: 1;
+    -moz-transition:color .2s ease-in; /*--- eases the colour change on the hover ---*/
+    -o-transition:color .2s ease-in;
+    -webkit-transition:color .2s ease-in;
+}
+
+.social a:hover{
+    opacity: .75;
 }
 
 
 
+@media (max-width: 960px) {
+
+    .social { width: 100%; text-align: center;}
+    .social img { max-height: 24px; max-width: 24px;}
+            
+    .copyright {width:100%; text-align: center;}
+    .copyright p { line-height: 1.4em;}
+}
 
