@@ -392,6 +392,28 @@ h3 {
     text-decoration: none;
     color: #f45a5a;
 }
+
+#project-intro p{
+    margin-top: 0.5em;
+    font-family: Sofia Pro;
+    font-size: calc(1.25em);
+    text-align: left;
+    font-weight: 400;
+    line-height: 1.35;
+    color:slategray;
+    margin-bottom: 2.2em;
+    width: 100%;
+}
+
+#project-intro{
+    width: 100%;
+    overflow: hidden;
+}
+
+#project-intro a {
+    text-decoration: none;
+    color: #f45a5a;
+}
     
 h4 {
     color: #f45a5a; 
@@ -497,6 +519,43 @@ h4 {
     .project-navigation {margin-bottom: 4em;}
 }
 
+
+
+
+
+.project-navigation-portfolio {
+    width:100%;
+    text-align: center;
+    height: auto;
+    margin: auto;
+    margin-top: 0.5em;
+    margin-bottom: 4em;
+    font-size: 1.25em;
+    line-height: 1.4em;
+    font-family: Sofia Pro, sans-serif;
+    letter-spacing: .045em;
+}
+
+
+
+.project-navigation-portfolio a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #ff4545;
+     -moz-transition:color .2s ease-in; /*--- eases the colour change on the hover ---*/
+    -o-transition:color .2s ease-in;
+    -webkit-transition:color .2s ease-in;
+}
+
+.project-navigation-portfolio a:hover{
+    color: #ff4545;
+    opacity: .75;
+}
+
+
+@media (max-width: 960px) {
+    .project-navigation-portfolio {margin-bottom: 4em;}
+}
 /* ------------------------------FOOTER---------------------------*/
 
 

@@ -7,6 +7,12 @@
 	padding: 0;
 	}
 
+@font-face{
+    font-family: Sofia Pro; 
+    src: url(/assets/fonts/sofiapro-light.otf)
+} 
+
+
 html{
     background-color:#f45a5a;
     align-content: center;
