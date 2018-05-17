@@ -412,7 +412,12 @@ h3 {
 
 #project-intro a {
     text-decoration: none;
-    color: #f45a5a;
+    border-bottom: 1.4px solid lightslategray;
+    color: slategray;
+}
+
+#project-intro a:hover {
+    opacity: 0.5;
 }
     
 h4 {
@@ -531,9 +536,11 @@ h4 {
     margin-top: 0.5em;
     margin-bottom: 4em;
     font-size: 1.25em;
+    font-weight: 400;
     line-height: 1.4em;
     font-family: Sofia Pro, sans-serif;
     letter-spacing: .045em;
+    color: slategray;
 }
 
 
