@@ -48,12 +48,13 @@ body {
 header{
     position: relative;
     height: 9em;
+    top: 1.4em;
 }
 
 
 @media (max-width: 600px) {header {max-height: 9em;}}
 
-@media (min-width: 1200px) {header{height: 10em;}}
+@media (min-width: 1200px) {header{height: 14em;}}
 
 
 
